@@ -1,0 +1,35 @@
+{
+  "name": "tea-lang",
+  "displayName": "Tea Lang",
+  "description": "Syntax highlighting for tea lang",
+  "version": "0.0.1",
+  "publisher": "openrotary",
+  "engines": {
+    "vscode": "^1.39.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "tea",
+        "aliases": [
+          "Tea",
+          "tea"
+        ],
+        "extensions": [
+          ".tea"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "tea",
+        "scopeName": "source.tea",
+        "path": "./syntaxes/tea.tmLanguage.json"
+      }
+    ]
+  }
+}
